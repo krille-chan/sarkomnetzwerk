@@ -1,5 +1,5 @@
 ---
-title: "Sarkomnetzwerk"
+
 ---
 
 <!doctype html>
@@ -8,16 +8,22 @@ title: "Sarkomnetzwerk"
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <link rel="stylesheet" href="/output.css"/>
   </head>
   <body>
-    <header>{{ title }}</header>
-    <nav>
-      <a href="/">home</a>
-      <a href="/netzwerk/">Sarkomnetzwerk</a>
-      <a href="/messenger/">Messenger</a>
-    </nav>
-    {{ content | safe }}
-    <footer>
+    <header class="p-4">
+      <nav class="shadow-lg shadow-gray-200 rounded-xl p-4 flex gap-2 text-indigo-800 text-xl">
+        <a class="{{ 'bg-indigo-50' if title == "Home"}} px-2 rounded hover:underline hover:text-indigo-600" href="/">Home</a>
+        <a class="{{ 'bg-indigo-50' if title == "Netzwerk"}} px-2 rounded hover:underline hover:text-indigo-600" href="/netzwerk/">Sarkomnetzwerk</a>
+        <a class="{{ 'bg-indigo-50' if title == "Messenger"}} px-2 rounded hover:underline hover:text-indigo-600" href="/messenger/">Messenger</a>
+        <div class="flex-grow"></div>
+        <a>P</a>
+      </nav>
+    </header>
+    <div class="">
+      {{ content | safe }}
+    </div>
+    <footer class="p-4">
       <nav>
         <a href="/impressum/">Impressum</a>
         <a href="/datenschutz/">Datenschutz</a>

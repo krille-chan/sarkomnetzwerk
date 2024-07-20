@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "npx @11ty/eleventy --serve"
+    "run": "npx @11ty/eleventy --serve",
+    "tailwind": "npx tailwindcss -i ./src/style/base.css -o ./public/output.css --watch"
   },
   "keywords": [],
   "author": "",
