@@ -9,25 +9,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/output.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
   </head>
   <body>
-    <header class="p-4">
-      <nav class="shadow-lg shadow-gray-200 rounded-xl p-4 flex gap-2 text-indigo-800 text-xl">
-        <a class="{{ 'bg-indigo-50' if title == "Home"}} px-2 rounded hover:underline hover:text-indigo-600" href="/">Home</a>
-        <a class="{{ 'bg-indigo-50' if title == "Netzwerk"}} px-2 rounded hover:underline hover:text-indigo-600" href="/netzwerk/">Sarkomnetzwerk</a>
-        <a class="{{ 'bg-indigo-50' if title == "Messenger"}} px-2 rounded hover:underline hover:text-indigo-600" href="/messenger/">Messenger</a>
+    <header class="p-8">
+      <div class="shadow-lg shadow-gray-100 rounded-xl flex text-indigo-800 text-xl items-center">
+        <nav class="flex flex-row gap-2 flex-1 p-4">
+          <a class="{{ 'bg-indigo-50' if title == "Home"}} px-2 rounded hover:text-indigo-600" href="/">Home</a>
+          <a class="{{ 'bg-indigo-50' if title == "Netzwerk"}} px-2 rounded hover:text-indigo-600" href="/netzwerk/">Sarkomnetzwerk</a>
+          <a class="{{ 'bg-indigo-50' if title == "Messenger"}} px-2 rounded hover:text-indigo-600" href="/messenger/">Messenger</a>
+        </nav>
         <div class="flex-grow"></div>
-        <a>P</a>
-      </nav>
+        <a><img src="/assets/profile.svg" class="w-12 h-12 mx-2"/></a>
+      </div>
     </header>
-    <div class="">
+    <div>
       {{ content | safe }}
     </div>
-    <footer class="p-4">
+    <footer class="p-4 text-center text-xl">
       <nav>
-        <a href="/impressum/">Impressum</a>
-        <a href="/datenschutz/">Datenschutz</a>
-        <a href="/kontakt/">Kontakt</a>
+        <a href="/impressum/" class="p-4 text-indigo-800 hover:text-indigo-600">Impressum</a>
+        <a href="/datenschutz/" class="p-4 text-indigo-800 hover:text-indigo-600">Datenschutz</a>
+        <a href="/kontakt/" class="p-4 text-indigo-800 hover:text-indigo-600">Kontakt</a>
+        <span class="p-4">© 2024 Sarkomnetzwerk</span>
       </nav>
     </footer>
   </body>
