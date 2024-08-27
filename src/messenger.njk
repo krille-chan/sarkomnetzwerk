@@ -1,6 +1,12 @@
 ---
 title: Messenger
-layout: "layout.njk"
+layout: "messenger.njk"
+url: "https://app.famedly.de/#/?homeserver=tim-beta.staging.famedly.de"
 ---
 
-Messenger
+<div class="w-screen h-full px-8 pb-8 flex">
+    <iframe src="{{ url }}" class="shadow-lg shadow-indigo-100 rounded-xl flex-1">Ihr Browser scheint keine iFrames zu unterstützen. Bitte rufen Sie
+        <a href="{{ url }}">die Famedly App</a>
+        direkt auf.
+    </iframe>
+</div>
