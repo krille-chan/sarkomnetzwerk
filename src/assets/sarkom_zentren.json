@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Beispiel Name 1",
+        "adresse": "Beispiel Adresse 1",
+        "website": "https://example1.com"
+    },
+    {
+        "name": "Beispiel Name 2",
+        "adresse": "Beispiel Adresse 2",
+        "website": "https://example2.com"
+    }
+]

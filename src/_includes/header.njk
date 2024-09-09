@@ -1,13 +1,15 @@
-<header class="p-8">
-    <div class="shadow-lg shadow-indigo-100 rounded-xl flex text-indigo-800 text-xl items-stretch">
-        <nav class="flex flex-row gap-1 flex-1 px-4 py-2">
-            <a class="{{ 'bg-indigo-50' if title == "Home"}} px-4 py-2 rounded-xl hover:text-indigo-500" href="/">Home</a>
-            <a class="{{ 'bg-indigo-50' if title == "Netzwerk"}} px-4 py-2 rounded-xl hover:text-indigo-500" href="/netzwerk/">Sarkomnetzwerk</a>
-            <a class="{{ 'bg-indigo-50' if title == "Messenger"}} px-4 py-2 rounded-xl hover:text-indigo-500" href="/messenger/">Messenger</a>
+<header class="md:p-8 p-2">
+    <div class="shadow-lg shadow-indigo-100 rounded-xl md:flex text-indigo-800 text-xl items-stretch">
+        <nav class="md:flex gap-1 flex-1 md:px-4 py-2 text-center">
+            <a class="{{ 'md:bg-indigo-50 underline' if title == "Home"}} px-4 py-2 rounded-xl hover:text-indigo-500" href="/">Home</a>
+            <a class="{{ 'md:bg-indigo-50 underline' if title == "Netzwerk"}} px-4 py-2 rounded-xl hover:text-indigo-500" href="/netzwerk/">Sarkomnetzwerk</a>
+            <a class="{{ 'md:bg-indigo-50 underline' if title == "Messenger"}} px-4 py-2 rounded-xl hover:text-indigo-500" href="/messenger/">Messenger</a>
+            <a class="md:hidden px-4 py-2 rounded-xl hover:text-indigo-500" href="https://auth.famedly.de" target="_blank">
+                Kontoeinstellungen</a>
         </nav>
-        <div class="flex-grow"></div>
+        <div class="md:flex-grow"></div>
         <a
-            class="bg-slate-50 hover:bg-slate-200 rounded-r-xl flex items-center justify-center"
+            class="bg-slate-50 hover:bg-slate-200 rounded-r-xl hidden md:flex items-center justify-center "
             href="https://auth.famedly.de"
             target="_blank"
             title="Kontoeinstellungen"><img src="/assets/profile.svg" class="w-12 h-12 mx-2"/>
