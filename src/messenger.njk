@@ -1,12 +1,29 @@
 ---
 title: Messenger
-layout: "messenger.njk"
-url: "https://famedly.github.io/app/#/home?homeserver=sarkomnetzwerk.famedly.care"
+layout: "layout.njk"
 ---
 
-<div class="w-screen h-full px-2 md:px-8 pb-8 flex">
-    <iframe src="{{ url }}" class="shadow-lg shadow-indigo-100 rounded-xl flex-1">Ihr Browser scheint keine iFrames zu unterstützen. Bitte rufen Sie
-        <a href="{{ url }}">die Famedly App</a>
-        direkt auf.
-    </iframe>
-</div>
+<article class="text-xl container mx-auto px-4 lg:px-32 my-16">
+    <div class="flex flex-row justify-center items-center">
+        <img class="w-96 mb-16" src="https://krille-chan.github.io/sarkomnetzwerk/assets/banner_2.png"/>
+    </div>
+    <div class="flex flex-row justify-center items-center">
+        <a
+            class="py-6 w-80 text-center bg-gray-900 rounded-lg text-white hover:scale-105 transition-transform"
+            href="https://app.famedly.de/#/?homeserver=sarkomnetzwerk.famedly.care"
+            target="_blank">🌐
+                                                                        jetzt im Browser öffnen</a>
+    </div>
+    <div class="flex flex-row justify-center items-center h-16 mt-4 mb-16">
+        <a href="https://play.google.com/store/apps/details?id=com.famedly.talk" target="_blank">
+            <img
+                class="h-12 m-2 hover:scale-105 transition-transform"
+                src="https://krille-chan.github.io/sarkomnetzwerk/assets/playstore.png"/>
+        </a>
+        <a href="https://apps.apple.com/de/app/famedly/id1459847644" target="_blank">
+            <img
+                class="h-12 m-2 hover:scale-105 transition-transform"
+                src="https://krille-chan.github.io/sarkomnetzwerk/assets/appstore.png"/>
+        </a>
+    </div>
+</article>
