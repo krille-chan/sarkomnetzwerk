@@ -17,31 +17,31 @@ zentren:
 ---
 
 <article class="text-xl mb-16 mt-8">
-    <div class="flex container mx-auto px-8">
-        <div class="flex-1">
-            <h1 class="text-5xl">Teilnehmende Sarkomzentren</h1>
-        </div>
+  <div class="flex container mx-auto px-8">
+    <div class="flex-1">
+      <h1 class="text-5xl">Teilnehmende Sarkomzentren</h1>
     </div>
+  </div>
 </article>
 <article class="container mx-auto px-8 mb-16">
-    <table class="rounded-xl shadow-lg shadow-indigo-100 w-full">
-        {% for eintrag in zentren %}
-            <tr class="border-b">
-                <td class="p-4"><img src="./assets/sarkomzentrum.png" class="w-8"/>
-                </td>
-                <td class="p-4">{{ eintrag.name }}</td>
-                <td class="p-4">{{ eintrag.address }}</td>
-                <td class="p-4 text-right">
-                    {% if eintrag.website %}
-                        🌐
-                        <a class="text-indigo-800 underline hover:text-indigo-500" href="{{ eintrag.website }}">Website</a><br/>
-                    {% endif %}
-                    {% if eintrag.tel %}
-                        📞
-                        <a class="text-indigo-800 underline hover:text-indigo-500" href="tel:{{ eintrag.tel }}">{{ eintrag.tel }}</a><br/>
-                    {% endif %}
-                </td>
-            </tr>
-        {% endfor %}
-    </table>
+  <table class="rounded-xl shadow-lg shadow-indigo-100 w-full">
+    {% for eintrag in zentren %}
+      <tr class="border-b">
+        <td class="p-4"><img src="/assets/sarkomzentrum.png" class="w-8"/>
+        </td>
+        <td class="p-4">{{ eintrag.name }}</td>
+        <td class="p-4">{{ eintrag.address }}</td>
+        <td class="p-4 text-right">
+          {% if eintrag.website %}
+            🌐
+            <a class="text-indigo-800 underline hover:text-indigo-500" href="{{ eintrag.website }}">Website</a><br/>
+          {% endif %}
+          {% if eintrag.tel %}
+            📞
+            <a class="text-indigo-800 underline hover:text-indigo-500" href="tel:{{ eintrag.tel }}">{{ eintrag.tel }}</a><br/>
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
 </article>
