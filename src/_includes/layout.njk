@@ -4,23 +4,23 @@
 
 <!doctype html>
 <html lang="en">
-  {% include "head.njk" %}
-  <body>
-    {% include "header.njk" %}
-    <div>
-      {{ content | safe }}
-    </div>
-    <footer class="p-4 text-center text-xl">
-      <nav>
-        <a href="https://krille-chan.github.io/sarkomnetzwerk/hilfe/" class="p-2 text-indigo-800 hover:text-indigo-600">Hilfe</a>
-        -
-        <a href="https://krille-chan.github.io/sarkomnetzwerk/impressum/" class="p-2 text-indigo-800 hover:text-indigo-600">Impressum</a>
-        -
-        <a href="https://krille-chan.github.io/sarkomnetzwerk/datenschutz/" class="p-2 text-indigo-800 hover:text-indigo-600">Datenschutz</a>
-        -
-        <a href="https://krille-chan.github.io/sarkomnetzwerk/kontakt/" class="p-2 text-indigo-800 hover:text-indigo-600">Kontakt</a>
-        <span class="p-4">© 2024 Sarkomnetzwerk</span>
-      </nav>
-    </footer>
-  </body>
+    {% include "head.njk" %}
+    <body>
+        {% include "header.njk" %}
+        <div>
+            {{ content | safe }}
+        </div>
+        <footer class="p-4 text-center text-xl">
+            <nav>
+                <a href="/hilfe/" class="p-2 text-indigo-800 hover:text-indigo-600">Hilfe</a>
+                -
+                <a href="/impressum/" class="p-2 text-indigo-800 hover:text-indigo-600">Impressum</a>
+                -
+                <a href="/datenschutz/" class="p-2 text-indigo-800 hover:text-indigo-600">Datenschutz</a>
+                -
+                <a href="/kontakt/" class="p-2 text-indigo-800 hover:text-indigo-600">Kontakt</a>
+                <span class="p-4">© 2024 Sarkomnetzwerk</span>
+            </nav>
+        </footer>
+    </body>
 </html>
