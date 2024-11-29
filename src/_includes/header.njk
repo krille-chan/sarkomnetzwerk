@@ -1,21 +1,25 @@
 <header class="md:p-8 p-2">
     <div class="shadow-lg shadow-indigo-100 rounded-xl md:flex text-indigo-800 text-xl items-stretch">
         <nav class="md:flex gap-1 flex-1 md:px-4 py-2 text-center">
-            <div class="w-16">
+            <a href="/" class="hover:scale-110 transition-transform w-16">
                 <img class="h-11" src="/assets/logo.png"/>
-            </div>
+            </a>
             <a class="{{ 'md:bg-indigo-50 underline' if title == "Home"}} px-4 py-2 rounded-xl hover:text-indigo-500" href="/">Home</a>
             <a class="{{ 'md:bg-indigo-50 underline' if title == "Netzwerk"}} px-4 py-2 rounded-xl hover:text-indigo-500" href="/netzwerk/">Sarkomnetzwerk</a>
             <a class="{{ 'md:bg-indigo-50 underline' if title == "Messenger"}} px-4 py-2 rounded-xl hover:text-indigo-500" href="/messenger/">Messenger</a>
-            <a class="md:hidden px-4 py-2 rounded-xl hover:text-indigo-500" href="https://auth.famedly.de" target="_blank">
-                Kontoeinstellungen</a>
         </nav>
         <div class="md:flex-grow"></div>
         <a
-            class="bg-slate-50 hover:bg-slate-200 rounded-r-xl hidden md:flex items-center justify-center "
+            class="hover:bg-slate-50 hidden md:flex items-center justify-center "
+            href="https://app.famedly.de/#/?homeserver=sarkomnetzwerk.famedly.care"
+            target="_blank"
+            title="Messenger"><img src="/assets/chat.png" class="hover:scale-110 transition-transform ww-12 h-12 mx-2"/>
+        </a>
+        <a
+            class="hover:bg-slate-50 rounded-r-xl hidden md:flex items-center justify-center"
             href="https://auth.famedly.de"
             target="_blank"
-            title="Kontoeinstellungen"><img src="/assets/profile.svg" class="w-12 h-12 mx-2"/>
+            title="Admin-Zugang"><img src="/assets/profile.svg" class="hover:scale-110 transition-transform w-10 h-10 mx-2"/>
         </a>
     </div>
 </header>
